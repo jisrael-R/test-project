@@ -4,87 +4,155 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Eat in Peace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css"> 
 </head>
+
 <body>
- <div class="calc-outer-wrap">
-    <div id="form-error" style="display:none;"></div>
-    <form class="calc-form" id="calc-form">
-      <div class="form-fields">
-    
-        <div class="field-outer">
-          <label for="distance" class="top-label">Age:</label>
-          <div class="field-items">
-            <div class="field field-large">         
-              <input type="text" name="age" id="age" inputmode="numeric" pattern="[0-9]*">
-            </div><!--  /.field-large -->
-            
-            <div class="field field-medium">
-              <select name="gender">
-                <option value="Female">Female</option>
-                <option value="Male">Male</option>
-                       
-              </select>
-              
-            </div><!--  /.field-small -->
-          </div><!--  /.field-items -->
-        </div><!--  /.field-outer -->
-    
-        <div class="field-outer">
-          <label for="height" class="top-label">Height:</label>
-          <div class="field-items">
-            <div class="field">
-              <input type="text" name="height_ft" id="height-ft" inputmode="numeric" pattern="[0-9]*">
-              <label for="height-ft">feet</label>
-            </div><!--  /.field -->
-            <div class="field">
-              <input type="text" name="height_in" id="height-in" inputmode="numeric" pattern="[0-9]*">
-              <label for="height-in">inches</label>
-            </div><!--  /.field -->
-           <div class="field">
-              <input type="text" name="height_cm" id="height-cm" inputmode="numeric" pattern="[0-9]*">
-              <label for="height-cm">or centimeters</label>
-            </div><!--  /.field -->        
-          </div><!--  /.field-items -->
-        </div><!--  /.field-outer -->
-    
-        <div class="field-outer">
-          <label for="weight" class="top-label">Your weight:</label>
-          <div class="field-items">
-            <div class="field field-large">
-              <input type="text" name="weight" id="weight" inputmode="numeric" pattern="[0-9]*">
-            </div><!--  /.field-large -->
-            <div class="field field-small">
-              <select name="weight_unit">
-                <option value="lb">lb</option>
-                <option value="kg">kg</option>
-              </select>
-            </div><!--  /.field-small -->
-          </div><!--  /.field-items -->
-        </div><!--  /.field-outer -->
-       <div class="btn-wrap field-outer">
-        <button class="form-submit">Calculate</button>
-      </div>
-      </div><!--  /.form fields -->
-    
-    
-    </form>
-    <div id="results" style="display:none;"></div>
-    </div><!--  /.calc-outer-wrap -->
-    
-    <div class="field zip" style="margin-left: .5em;">
-      <label for="zipcode">Zip-Code</label>
-      <input type="text" name="zipcode" id="zipCode">
-      <button id="getId" class="form-submit">Get Location</button>
-    </div>
-    <div  class="result">
-      <p id="results"></p>
+  <header class="card-panel red accent-1">
+      <h1 class="white-text text-darken-2">Eat in Peace</h1>
+  </header>
+  <!--hero/junbotron-->
+  <section class= "hero">
+    <div class="calc-outer-wrap">
+      <div id="form-error" style="display:none;"></div>
+      <form class="calc-form" id="calc-form">
+        <div class="form-fields">
       
+          <div class="field-outer">
+            <label for="distance" class="top-label">Age:</label>
+            <div class="field-items">
+              <div class="field field-large">         
+                <input type="text" name="age" id="age" inputmode="numeric" pattern="[0-9]*">
+              </div><!--  /.field-large -->
+              
+              <div class="field field-medium">
+                <select name="gender">
+                  <option value="Female">Female</option>
+                  <option value="Male">Male</option>
+                         
+                </select>
+                
+              </div><!--  /.field-small -->
+            </div><!--  /.field-items -->
+          </div><!--  /.field-outer -->
+      
+          <div class="field-outer">
+            <label for="height" class="top-label">Height:</label>
+            <div class="field-items">
+              <div class="field">
+                <input type="text" name="height_ft" id="height-ft" inputmode="numeric" pattern="[0-9]*">
+                <label for="height-ft">feet</label>
+              </div><!--  /.field -->
+              <div class="field">
+                <input type="text" name="height_in" id="height-in" inputmode="numeric" pattern="[0-9]*">
+                <label for="height-in">inches</label>
+              </div><!--  /.field -->
+             <div class="field">
+                <input type="text" name="height_cm" id="height-cm" inputmode="numeric" pattern="[0-9]*">
+                <label for="height-cm">or centimeters</label>
+              </div><!--  /.field -->        
+            </div><!--  /.field-items -->
+          </div><!--  /.field-outer -->
+      
+          <div class="field-outer">
+            <label for="weight" class="top-label">Your weight:</label>
+            <div class="field-items">
+              <div class="field field-large">
+                <input type="text" name="weight" id="weight" inputmode="numeric" pattern="[0-9]*">
+              </div><!--  /.field-large -->
+              <div class="field field-small">
+                <select name="weight_unit">
+                  <option value="lb">lb</option>
+                  <option value="kg">kg</option>
+                </select>
+              </div><!--  /.field-small -->
+            </div><!--  /.field-items -->
+          </div><!--  /.field-outer -->
+         <div class="btn-wrap field-outer">
+          <button class="form-submit">Calculate</button>
+        </div>
+        </div><!--  /.form fields -->
+      
+      
+      </form>
+      <div id="results" style="display:none;"></div>
+      </div><!--  /.calc-outer-wrap -->
+      
+      <div class="field-outer calc-outer-wrap"  id="location-form" style="display: none">
+        <label for="zipcode">Zip-Code</label>
+        <input type="text" name="zipcode" id="zipCode">
+        <button id="getId" class="form-submit">Get Location</button>
+      </div>
+      <div class="col-12 col-md-6">
+        <h2 class="text">Restaurants around your area: <span id="repo-search-term"></span></h2>
+        <div id="repos-container" class="list-group">
+      
+  
+  
+  </section>  
 
+  <!-- about us -->
+  <div class="center"> 
+    <h3 class="text">About Us</h3>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo non magnam similique doloribus voluptatum totam eos velit, cumque laudantium, maxime saepe sapiente aut ipsa cupiditate commodi numquam quisquam? Ullam, eligendi.
+    </p>
+    <div class="row">
+      <div class="col s2 ">
+        <img src= "assets/images/Applebees.jpg" class = "responsive-img"/>
+      </div>
+      <div class="col s2 ">
+        <img src = "assets/images/Arby's.jpg" class="responsive-img"/>
+      </div>
+      <div class="col s2 ">
+        <img src = "assets/images/BurgerK.png" class="responsive-img"/>
+      </div>
+      <div class="col s2 ">
+        <img src = "assets/images/ChickF.png" class="responsive-img"/>
+      </div>
+      <div class="col s2">
+        <img src = "assets/images/Chipotle.png" class="responsive-img"/>
+      </div>
+      <div class="col s2">
+        <img src = "assets/images/Domino.jpg" class="responsive-img"/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s2 ">
+        <img src = "assets/images/FiveGuys.jpg" class="responsive-img"/>
+      </div>
+      <div class="col s2 ">
+        <img src = "assets/images/JustSalad.jpg" class="responsive-img"/>
+      </div>
+      <div class="col s2 ">
+        <img src = "assets/images/McDonald.jpg" class="responsive-img"/>
+      </div>
+      <div class="col s2 ">
+        <img src = "assets/images/Panera.png" class="responsive-img"/>
+      </div>
+      <div class="col s2 ">
+        <img src = "assets/images/StarB.png" class="responsive-img"/>
+      </div>
+      <div class="col s2 ">
+        <img src = "assets/images/Subway.jpg" class="responsive-img"/>
+      </div>
     </div>
 
-    <script src="script.js"></script>
+
     
+  </div>
+
+  <!--script-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
+  <!--footer-->
+ <footer class="card-panel red accent-1">
+    <h4 class="white-text text-darken-2">Created by Marvin Ren, Jorman Israel, Fatou Fall</h2>
+ </footer>
 </html>
